@@ -1,0 +1,37 @@
+{% extends 'bootstrap.html' %}
+
+{% block body %}
+
+<div class="cold-md-5 offset-md-4">
+        <form action="/update/{{contact.0}}" method="POST">
+
+            <div class="form-form-group">
+                <input type = "next" name="fullname" placeholder="Nombre completo" value="{{contact.1}}" class="form-control">
+ 
+            </div>
+
+            <div class="form-form-group">
+                <input type = "next" name="phone" placeholder="Telefono"value="{{contact.2}}" class="form-control">
+                
+            </div>
+
+            <div class="form-form-group">
+                <input type = "next" name="email" placeholder="Correo"value="{{contact.3}}" class="form-control">
+                
+            </div>
+
+            <div class="form-form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    Guardar
+            </div>
+            
+            
+            
+            
+        
+        
+            </form>
+
+
+</div>
+    {% endblock %}
